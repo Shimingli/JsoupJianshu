@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
 
 import java.io.IOException;
 
@@ -23,18 +24,14 @@ public class JsoupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.jsoup_activity_layout);
         initData();
-        try {
-            Jsoup.connect("http://www.jianshu.com/u/a58eb984bda4").timeout(10000).get();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
     }
 
     private void initData() {
         try {
             //我个人的简书的地址
             mDocument = Jsoup.connect("http://www.jianshu.com/u/a58eb984bda4").timeout(10000).get();
-            mDocument.select("");
+            mDocument.firstElementSibling();
         } catch (IOException e) {
             e.printStackTrace();
         }
