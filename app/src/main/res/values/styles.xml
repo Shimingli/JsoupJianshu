@@ -1,15 +1,21 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-
     <style name="AppThemeNoTitle" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
 
+    </style>
+
+    <style name="DayShadowStyle">
+        <item name="android:shadowColor">#333333</item>
+        <item name="android:shadowDx">0.1</item>
+        <item name="android:shadowDy">0.1</item>
+        <item name="android:shadowRadius">0.1</item>
     </style>
 </resources>

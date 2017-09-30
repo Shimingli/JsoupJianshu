@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="common_green">#69BF30</color>
+    <color name="common_btn_background">#EDEAE8</color>
+    <color name="common_dividing_line">#EEEEEE</color>
+    <color name="common_txt_color">#333333</color>
 </resources>
